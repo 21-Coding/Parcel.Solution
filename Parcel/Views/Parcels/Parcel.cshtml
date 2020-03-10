@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Welcome to Podolak's Parcel Palace!</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+  <body class="bg-danger">
+    <h1>Fill in the details below for your new shipment!</h1>
+    <form action="/parcels" method="post">
+     <label for="height" ></label>
+     <input id="height" name="height" type="text" placeholder="Height">
+
+     <label for="depth" placeholder="depth"></label>
+     <input id="depth" name="depth" type="text" placeholder="Depth">
+
+
+     <label for="width" placeholder="Width"></label>
+     <input id="width" name="width" type="text" placeholder="Width">
+
+     <label for="weight"></label>
+     <input id="weight" name="weight" type="text" placeholder="Weight"> 
+   
+     <button class="btn btn-success" type="submit">Add Shipment</button>
+    </form>
+
+    <a href='/parcels'>See list of shipments.</a>
+  </body>
+</html>

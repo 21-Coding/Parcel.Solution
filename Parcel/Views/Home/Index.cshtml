@@ -1,0 +1,17 @@
+﻿@using Parcel.Models;
+
+<h1>Podolak's Parcel Palace</h1>
+@if (Model.Count == 0)
+{
+  <p>There are no orders today.</p>
+}
+<ul>
+  @foreach (Parcel parcel in Model)
+  {
+    <li>@parcel.Height</li>
+    <li>@parcel.Message</li>
+    <li>@parcel.Price</li>
+    <li>@parcel.Miles</li>
+  }
+</ul>
+<a href="/parcels/new">Add a new item.</a>
